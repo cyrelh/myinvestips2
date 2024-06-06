@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css"> <!-- Lien vers le style CSS -->
+    
+       <script src="https://kit.fontawesome.com/65d2f9ab78.js" crossorigin="anonymous"></script>    
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Import à Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Questrial&family=Young+Serif&display=swap" rel="stylesheet"> <!-- Import à Google Fonts Questrial -->
+    
+        <title>Portfolio de Cyril EL-HAKIM - Web Developer</title>
+        <link rel="shortcut icon" href="./images/logo-cyril.webp" /> <!-- Icône de raccourci pour le site -->
+        <meta name="description" content="Portfolio de Cyril EL-HAKIM, je suis un développeur web junior fraîchement diplômé de la formation d'OpenClassrooms. Je suis animé par une forte motivation et une passion profonde pour ce métier ainsi que pour la programmation. Je suis prêt à relever les défis qui me seront confiés et à répondre aux attentes des clients avec diligence et dévouement."/>
+    </head>
+<body>
+    <header>
+        <!-- HEADER -->
+        <div class='header_wrapper'>
+            <a class='header_logo' href='./index.html'>
+                <img src="./images/logo-cyril.webp" alt='Logo de Cyril' class="rounded_logo"/>
+            </a>
+            <nav>
+                <!-- MENU DE NAVIGATION -->
+                <ul class='nav_menu'>
+                    <li><a href='./' class='nav_link'>Accueil</a></li>
+                    <li><a href='skills.html' class='nav_link'>Mes compétences</a></li>
+                    <li><a href='project.html' class='nav_link active'>Mes projets</a></li>
+                    <li><a href='contact.html' class='nav_link'>Contact</a></li>
+                    <button type="button" aria-label="toggle theme" class="btn btn--icon">
+                      <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+      <!-- SECTION PROJETS -->
+      <section id="projects" class="section-projects">
+        <h1 class="section_title"> Mes projets</h1>
+
+        <div class="projects_grid">
+          <div class="project">
+            <h1>Booki</h1>
+            <h2>Création d'un site web de réservation d'hébergements</h2>
+            <img src="./images/Booki-logo.webp" alt="Le site de Booki"/>
+            <p class="project_description">            
+              <h2><em>Difficultés rencontrées et surmontées</em></h2>
+              <h3>1-Compréhension des langages HTML et CSS </h3>
+              <p>Il était essentiel de comprendre les principes de base du HTML et du CSS pour pouvoir créer une page web statique et responsive. Cela impliquait de maîtriser la structuration du contenu avec HTML et la mise en forme avec CSS.</p>
+              <h3>2-Utilisation d'outils professionnels  </h3>
+              <p>Se familiariser avec des outils était nécessaire tels que Visual Studio Code pour l'édition du code, Git pour la gestion de version et GitHub pour le partage du code.</p>
+            <h3>3-Découpage de la maquette </h3>
+            <p>Analyser et découper la maquette fournie afin de préparer l'intégration du contenu demandait de la précision et de la méthodologie. Il était nécessaire de comprendre la structure de la page et d'identifier les éléments à intégrer.</p>
+            <h3>4-Intégration du contenu </h3>
+            <p>Une fois la maquette découpée, il fallait coder la page en respectant le découpage pour obtenir un résultat conforme à la maquette. Cela impliquait d'appliquer les styles CSS nécessaires pour reproduire fidèlement le design.</p>
+            </p>
+            <ul class="project_stack">
+              <li class="project_stack-item">HTML</li>
+              <li class="project_stack-item">CSS</li>
+              <li class="project_stack-item">FIGMA</li>
+            </ul>
+      
+            <a
+              href="https://github.com/cyrelh/Projet2_Booki.git"
+              target="_blank"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://cyrelh.github.io/Projet2_Booki/"
+              target="_blank"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="#" class="open-modal" data-modal-id="project-modal-1">Aperçu du projet</a>
+
+          </div>
+
+          <div class="project">
+            <h1>Sophie Bluel - Archiwebos</h1>
+            <h2>Création d'une page web dynamique avec JavaScript</h2>
+            <img src="./images/Sophie-logo.webp" alt="Le site de Sophie Bluel"/>
+            <p class="project_description">
+              <h2><em>Difficultés rencontrées et surmontées</em></h2>
+              <h3>1-Transformation d'une Page Statique en Dynamique </h3>
+              <p>Le premier défi consistait à passer d'une simple page statique à une interface web dynamique. <br> Comprendre comment rendre les éléments interactifs avec JavaScript n'était pas une mince affaire, mais en explorant les concepts, j'ai réussi à rendre l'interface dynamique pour l'utilisateur.</p>
+              <h3>2-Gestion de l'API</h3>
+              <p>Cette gestion m’a demandé une compréhension approfondie de JavaScript. J'ai dû faire preuve de patience et de détermination pour surmonter ces difficultés, en cherchant des ressources en ligne. <br> Une API était fonctionnelle afin de permettre la connexion au site, puis récupérer des projets contenant diverses informations grâce auxquelles j’ai pu programmer un filtrage de la galerie de photos et une modale pour ajouter/supprimer des projets. </p>
+              <h3>3-Intégration des Fenêtres Modales </h3>
+              <p>L'intégration des fenêtres modales pour permettre l'ajout, la modification et la suppression d'images a été une autre étape complexe. <br> Comprendre le fonctionnement du DOM et des événements JavaScript a été essentiel pour créer des modales interactives. J'ai dû faire preuve de débrouillardise pour surmonter ces défis, en m'appuyant sur des ressources en ligne.</p>
+            </p>
+            <ul class="project_stack">
+              <li class="project_stack-item">Javascript</li>
+              <li class="project_stack-item">API</li>
+            </ul>
+            <a
+              href="https://github.com/cyrelh/Projet3_Archiwebos.git"
+              target="_blank"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a href="#" class="open-modal" data-modal-id="project-modal-2">Aperçu du projet</a>
+          </div>
+          
+
+          <div class="project">
+            <h1>Nina Carduccci</h1>
+            <h2>Optimisation et Debug d'un site web</h2>
+            <img src="./images/Nina-logo.webp" alt="Le site de Nina Carducci"/>
+            <p class="project_description">
+              <h2><em>Difficultés rencontrées et surmontées</em></h2>
+              <h3>1-Optimisation des Performances et de l'Accessibilité  </h3>
+              <p>L'optimisation du site impliquait la restructuration du code, l'optimisation des images, la minification des fichiers et le nettoyage du dossier principal. <br> En parallèle, j'ai également implémenté des données structurées à l'aide du protocole Schema.org et j'ai initié des outils d'audit de performances tels que Lighthouse et d'accessibilité tels que Wave. <br> Cette phase a nécessité une attention particulière aux détails et une compréhension approfondie des bonnes pratiques en matière de développement web.</p>
+              <h3>2-Identification et Correction des Bugs</h3>
+              <p>Le débogage du site a été ma dernière tâche. À l'aide des outils de mon navigateur, j'ai pu localiser et corriger des bugs de navigation dans la modale ainsi que des problèmes de sélection de filtres. <br> Cette étape a demandé une analyse minutieuse du code et une compréhension approfondie des interactions entre les différentes parties du site.</p>
+              <h3>3-Communication et Rapport d'Optimisation</h3>
+              <p>Lors de la rédaction du rapport d’intervention, j'ai dû justifier certaines décisions prises, notamment en ce qui concerne les dernières erreurs de contraste restantes sur le site. J'ai pu améliorer significativement le référencement et l'accessibilité du site portfolio de Nina Carducci. <br> Ce projet m'a permis d'explorer de nouvelles notions et outils, tout en développant mes compétences en débogage et en optimisation.</p>
+            </p>
+            
+            <ul class="project_stack">
+              <li class="project_stack-item">SEO</li>
+              <li class="project_stack-item">Lighthouse</li>
+              <li class="project_stack-item">Wave</li>
+            </ul>
+
+            <a
+              href="https://github.com/cyrelh/P5_Debug_Optimisation.git"
+              target="_blank"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+            href="https://cyrelh.github.io/P5_Debug_Optimisation/"
+            target="_blank"
+            aria-label="live preview"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          <a href="#" class="open-modal" data-modal-id="project-modal-3">Aperçu du projet</a>
+
+          </div>
+          
+          <div class="project" id="kasa-project">
+            <h1>Kasa</h1>
+            <h2>Création d'un site de réservation d'hébergement avec React </h2>
+            <img src="./images/Kasa-logo.webp" alt="Le site de Kasa"/>
+            <p class="project_description">
+              <h2><em>Difficultés rencontrées et surmontées</em></h2>
+              <h3>1-Apprentissage de React</h3>
+              <p>Grâce aux cours proposés par OpenClassrooms et à la documentation officielle de React, j'ai pu acquérir les bases essentielles de ce nouveau langage. <br> Les heures de pratique ont également été précieuses pour consolider mes connaissances et comprendre les notions fondamentales de React.</p>
+              <h3>2-Initialisation de l'Application et Utilisation de React Router </h3>
+              <p>Une fois familiarisé avec React, j'ai commencé par initialiser l'application avec Vite.js et installer React Router pour gérer la navigation entre les différentes pages. <br> La mise en place de la logique de routage a été une étape importante pour assurer la navigation fluide à travers l'application.</p>
+              <h3>3-Développement de Composants et Gestion de l'Architecture </h3>
+              <p>Le projet consistait à développer une application responsive pour une agence de location de logements nommée Kasa. J'ai dû créer plusieurs composants, dont certains animés et interactifs (comme un carrousel). <br> La gestion de l'architecture de l'application a été un défi majeur, nécessitant une compréhension approfondie des concepts de React.</p>
+              <h3>4-Utilisation de JSX et animation de Sass </h3>
+              <p>La découverte du JSX et du langage Sass a été une étape importante dans le développement de l'application. J'ai appris à intégrer du JSX dans mes composants React et à utiliser Sass pour styliser l'interface utilisateur. <br> La création d'animations en Sass a été particulièrement enrichissante et a ajouté une dimension interactive à l'application.</p>
+            
+            </p>
+            <ul class="project_stack">
+              <li class="project_stack-item">SASS</li>
+              <li class="project_stack-item">React</li>
+              <li class="project_stack-item">React Router</li>
+              <li class="project_stack-item">Vite.JS</li>
+            </ul>
+
+            <a
+              href="https://github.com/cyrelh/P6_React_Kasa.git"
+              target="_blank"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a href="#" class="open-modal" data-modal-id="project-modal-4">Aperçu du projet</a>
+
+          </div>
+
+          <div class="project">
+            <h1>Mon Vieux Grimoire</h1>
+            <h2>Développement du back-end d'un site de notation de livres</h2>
+            <img src="./images/Grimoire-logo.webp" alt="Le logo du site de Mon Vieux Grimoire"/>
+            <p class="project_description">
+              <h2><em>Difficultés rencontrées et surmontées</em></h2>
+              <h3>1-Apprentissage des Technologies Backend  </h3>
+              <p>La première étape consistait à se familiariser avec Node.js, Express.js et MongoDB. Grâce aux cours méthodiques proposés par OpenClassrooms, j'ai pu acquérir les bases de ces technologies.</p>
+              <h3>2-Configuration du Serveur et Installation de la Base de Données </h3>
+              <p>La configuration d'un serveur Node.js pour gérer une application Express et l'installation d'une base de données MongoDB ont été les premières étapes du projet. Comprendre comment mettre en place ces éléments fondamentaux était difficile mais essentiel pour démarrer le développement de l'API.</p>
+              <h3>3-Mise en Place de l'Authentification et des Fonctionnalités CRUD </h3>
+              <p>Une fois le serveur et la base de données configurés, la prochaine étape qui a été la plus compliquée, était la mise en place d'un système d'authentification pour sécuriser l'accès aux fonctionnalités de l'API.  Ensuite, j'ai implémenté les opérations CRUD (Create, Read, Update, Delete) pour permettre aux utilisateurs d'enregistrer, de modifier et de supprimer des livres sur le site.</p>
+              <h3>4-Implémentation de la Fonctionnalité de Notation </h3>
+              <p>Enfin, pour compléter le projet, j'ai ajouté la fonctionnalité de notation, permettant aux utilisateurs de noter les livres et de calculer la note moyenne. Cela a nécessité une compréhension approfondie des mécanismes de stockage et de manipulation des données dans MongoDB, ainsi que la mise en place d'algorithmes pour calculer la note moyenne de manière efficace.</p>
+            </p>
+            <ul class="project_stack">
+              <li class="project_stack-item">Node JS</li>
+              <li class="project_stack-item">Express</li>
+              <li class="project_stack-item">Mongo DB</li>
+            </ul>
+
+            <a
+              href="https://github.com/cyrelh/P7_Grimoire_backend"
+              target="_blank"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a href="#" class="open-modal" data-modal-id="project-modal-5">Aperçu du projet</a>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="footer_wrapper">
+            <p>© CYRIL EL-HAKIM 2024</p>
+        </div>
+        <div class="logo_wrapper">
+            <img src="./images/logo-cyril.webp" alt="Mon logo">
+        </div>
+    </footer>
+
+<!-- Contenu des fenêtres modales -->
+<div class="project-modal" id="project-modal-1" style="display: none;">
+  <!-- Contenu de la fenêtre modale pour le projet 1 -->
+  <div class="project-modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Description du projet Booki</h2>
+    <p id="modal-text">
+      Développement et intégration de l'interface front-end d'un site de location d’hébergements basée sur une conception réalisée avec Figma. <br> Création d'une application web entièrement responsive, garantissant une expérience utilisateur optimale sur tous les appareils.
+    </p>
+    <img src="./images/Booki-logo.webp" alt="Le site de Booki" id="img-logo-booki"/>
+
+    <!-- Ajout d'un conteneur pour les images -->
+    <div class="image-container" style="display: none;"></div>
+    <div class="modal-controls">
+      <button class="modal-btn modal-btn-prev" style="display: none;">Précédent</button>
+      <button class="modal-btn modal-btn-next">Suivant</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="project-modal" id="project-modal-2" style="display: none;">
+  <div class="project-modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Description du projet Sophie Bluel - Archiwebos</h2>
+    <p id="modal-text">
+      Création d'une interface web interactive en utilisant JavaScript. <br> Réalisation de la page de connexion ainsi que des fenêtres modales pour l'ajout, la modification et la suppression d'images.
+    </p>
+    <img src="./images/Sophie-logo.webp" alt="Le site de Sophie Bluel" id="img-logo-sophie"/>
+    <div class="image-container" style="display: none;"></div>
+    <div class="modal-controls">
+      <button class="modal-btn modal-btn-prev">Précédent</button>
+      <button class="modal-btn modal-btn-next">Suivant</button>
+    </div>
+  </div>
+</div>
+
+<div class="project-modal" id="project-modal-3" style="display: none;">
+  <div class="project-modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Description du projet de Nina Carducci</h2>
+    <p id="modal-text">
+      Optimisation globale du site web d'une photographe. <br> Mise en avant sur l'accessibilité, les performances techniques et la mise en œuvre d'un référencement local efficace pour augmenter sa visibilité.
+    </p>
+    <img src="./images/Nina-logo.webp" alt="Le site de Nina Carducci" id="img-logo-nina"/>
+
+    <div class="image-container" style="display: none;"></div>
+    <div class="modal-controls">
+      <button class="modal-btn modal-btn-prev">Précédent</button>
+      <button class="modal-btn modal-btn-next">Suivant</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="project-modal" id="project-modal-4" style="display: none;">
+  <div class="project-modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Description du projet de Kasa</h2>
+    <p id="modal-text">
+      Conception et réalisation du frontend d'un site de réservation d'hébergement en utilisant le framework React, garantissant une adaptabilité sur différents appareils. <br> Ce travail inclut la création de composants, la définition des routes et l'analyse ainsi que la segmentation des maquettes réalisées avec Figma.
+    </p>
+    <img src="./images/Kasa-logo.webp" alt="Le site de Kasa" id="img-logo-kasa"/>
+    <div class="image-container" style="display: none;"></div>
+    <div class="modal-controls">
+      <button class="modal-btn modal-btn-prev">Précédent</button>
+      <button class="modal-btn modal-btn-next">Suivant</button>
+    </div>
+  </div>
+</div>
+ 
+<div class="project-modal" id="project-modal-5" style="display: none;">
+  <div class="project-modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Description du projet de Mon Vieux Grimoire</h2>
+    <p id="modal-text">
+      Ce projet consiste à développer le backend d'un site de notation de livres. <br> Nous avons mis en place l'inscription des utilisateurs, créer une API REST et configurer la base de données pour stocker les informations nécessaires.
+    </p>
+    <img src="./images/Grimoire-logo.webp" alt="Le site de Mon Vieux Grimoire" id="img-logo-grimoire"/>
+    <div class="image-container" style="display: none;"></div>
+    <div class="modal-controls">
+      <button class="modal-btn modal-btn-prev">Précédent</button>
+      <button class="modal-btn modal-btn-next">Suivant</button>
+    </div>
+  </div>
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

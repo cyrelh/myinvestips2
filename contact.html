@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"> <!-- Lien vers le style CSS -->
+
+   <!-- Script Font Awesome pour les icons -->
+   <script src="https://kit.fontawesome.com/65d2f9ab78.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Import à Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Questrial&family=Young+Serif&display=swap" rel="stylesheet"> <!-- Import à Google Fonts Questrial -->
+
+    <title>Portfolio de Cyril EL-HAKIM - Web Developer</title>
+    <link rel="shortcut icon" href="./images/logo-cyril.webp" /> <!-- Icône de raccourci pour le site -->
+    <meta name="description" content="Portfolio de Cyril EL-HAKIM, je suis un développeur web junior fraîchement diplômé de la formation d'OpenClassrooms. Je suis animé par une forte motivation et une passion profonde pour ce métier ainsi que pour la programmation. Je suis prêt à relever les défis qui me seront confiés et à répondre aux attentes des clients avec diligence et dévouement."/>
+</head>
+<body class="light" id="top">
+    <header>
+        <div class='header_wrapper'>
+            <a class='header_logo' href='./index.html'>
+                <img src="./images/logo-cyril.webp" alt='Logo de Cyril' class="rounded_logo" />
+            </a>
+            <nav>
+                <ul class='nav_menu'>
+                    <li><a href='./' class='nav_link'>Accueil</a></li>
+                    <li><a href='skills.html' class='nav_link'>Mes compétences</a></li>
+                    <li><a href='project.html' class='nav_link'>Mes projets</a></li>
+                    <li><a href='contact.html' class='nav_link active'>Contact</a></li>
+                    <button type="button" aria-label="toggle theme" class="btn btn--icon">
+                        <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+                      </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact" class="home_contact">
+            <h2 class="contact_title">Contact</h2>
+            <a href="mailto:elhakim.cyril@outlook.com">
+                <span class="btn-email">Contactez-moi par email</span>
+            </a>
+            <div class="social-network">
+                <!-- Icône GitHub récupérée de l'index.html -->
+                <a href="https://github.com/cyrelh" aria-label="github" class="link-icon">
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <p>Cliquez au-dessus pour accéder à mes projets sur GitHub</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_wrapper">
+            <p>© CYRIL EL-HAKIM 2024</p>
+        </div>
+        <div class="logo_wrapper">
+            <img src="./images/logo-cyril.webp" alt="Mon logo">
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

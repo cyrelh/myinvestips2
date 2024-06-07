@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css"> <!-- Lien vers le style CSS -->
+    
+       <!-- Script Font Awesome pour les icons -->
+       <script src="https://kit.fontawesome.com/65d2f9ab78.js" crossorigin="anonymous"></script>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Import à Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Questrial&family=Young+Serif&display=swap" rel="stylesheet"> <!-- Import à Google Fonts Questrial -->
+    
+        <title>Portfolio de Cyril EL-HAKIM - Web Developer</title>
+        <link rel="shortcut icon" href="./images/logo-cyril.webp" /> <!-- Icône de raccourci pour le site -->
+        <meta name="description" content="Portfolio de Cyril EL-HAKIM, je suis un développeur web junior fraîchement diplômé de la formation d'OpenClassrooms. Je suis animé par une forte motivation et une passion profonde pour ce métier ainsi que pour la programmation. Je suis prêt à relever les défis qui me seront confiés et à répondre aux attentes des clients avec diligence et dévouement."/>
+    </head>
+<body class="light" id="top">
+        <!-- Section du menu de navigation -->
+        <header>
+            <div class='header_wrapper'>
+                <a class='header_logo' href='./index.html'>
+                    <img src="./images/logo.webp" alt='Logo' class="rounded_logo"/>
+                </a>
+                <nav>
+                    <ul class='nav_menu'>
+                        <li><a href='./' class='nav_link'>Accueil</a></li>
+                        <li><a href='sites.html' class='nav_link active'>Les sites de parrainage</a></li>
+                        <li><a href='project.html' class='nav_link '>Les plateformes</a></li>
+                        <li><a href='contact.html' class='nav_link '>Contact</a></li>
+                        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+                            <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+                          </button>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <div class="about">
+        <div class="about_intro">
+            <!-- SECTION COMPÉTENCES -->
+            <section id="skills" class='home_skills'>
+                <h3 class="skills_title"> Les sites de parrainage </h3>
+                <div class="about_skills_content" class="light" id="top">
+                    Accédez directement à la liste de mes primes de parrainage en cliquant sur chaque lien ci-dessous !</p>
+                </div>
+
+                <ul class="skills_list">
+                    <li>
+                        <span class="icon-spaced">
+                            <a href="https://www.1parrainage.com/listeannonces_99165_phenicien.php" target="_blank">1parrainage <br>
+                            <img src="./images/1parrainage.png" alt="Logo 1parrainage"> </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="icon-spaced">
+                            <a href="https://parrainage.co/user/myinvestips" target="_blank">Parrainage.co <br>
+                            <img src="./images/parrainage.png" alt="Logo parrainage.co"></a>                            
+                        </span>
+                    </li>
+                    <li>
+                        <span class="icon-spaced">
+                            <a href="https://www.super-parrain.com/users/myinvestips" target="_blank">Super-parrain <br>
+                            <img src="./images/superparrain.png" alt="Logo super-parrain"></a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="icon-spaced">
+                            <a href="https://linktr.ee/myinvestips" target="_blank">Linktr.ee <br>
+                            <img src="./images/linktr.png" alt="Logo linktr.ee"></a>
+                        </span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer_wrapper">
+            <p>© Myinvestips 2024</p>
+        </div>
+        <div class="logo_wrapper">
+            <img src="./images/logo.webp" alt="Logo">
+        </div>
+    </footer>
+</html>

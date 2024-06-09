@@ -412,3 +412,250 @@ function showImageGrimoire() {
 // Écouteurs d'événements pour les boutons "Next" et "Back" pour le projet Kasa
 nextBtnGrimoire.addEventListener("click", showNextImageGrimoire);
 prevBtnGrimoire.addEventListener("click", showPrevImageGrimoire);
+
+// Sélectionnez la fenêtre modale et les boutons de contrôle pour le projet Grimoire
+const modal6 = document.getElementById("project-modal-6");
+const modalText6= modal6.querySelector("#modal-text"); // Correction du sélecteur
+const prevBtn6 = modal6.querySelector(".modal-btn-prev");
+const nextBtn6 = modal6.querySelector(".modal-btn-next");
+const imageContainer6 = modal6.querySelector(".image-container");
+
+// Tableau des chemins d'accès des images pour le projet Grimoire
+const images6 = [
+  "./images/Grimoire/Grimoire-1.webp",
+  "./images/Grimoire/Grimoire-2.webp",
+  "./images/Grimoire/Grimoire-3.webp",
+  "./images/Grimoire/Grimoire-4.webp",
+  "./images/Grimoire/Grimoire-5.webp",
+  "./images/Grimoire/Grimoire-6.webp",
+  "./images/Grimoire/Grimoire-8.webp",
+  "./images/Grimoire/Grimoire-9.webp",
+  "./images/Grimoire/Grimoire-10.webp",
+  "./images/Grimoire/Grimoire-11.webp",
+  "./images/Grimoire/Grimoire-12.webp",
+  "./images/Grimoire/Grimoire-13.webp"
+];
+
+// Index de l'image actuellement affichée pour le projet Grimoire
+let currentIndex6 = 0;
+let showingText6 = true;
+
+// Fonction pour afficher l'image suivante pour le projet Grimoire
+function showNextImage6() {
+  if (showingText6) {
+    modalText6.style.display = "none";
+    imageContainer6.style.display = "block";
+    currentIndex6++;
+    showImage6();
+    showingText6 = false;
+    prevBtn6.style.display = "inline-block";
+  } else {
+    currentIndex6 = (currentIndex6 + 1) % images6.length;
+    showImage6();
+  }
+}
+
+// Fonction pour afficher l'image précédente pour le projet Grimoire
+function showPrevImage6() {
+  if (currentIndex6 === 0) {
+    if (!showingText6) {
+      modalText6.style.display = "block";
+      imageContainer6.style.display = "none";
+      showingText6 = true;
+      prevBtn6.style.display = "none";
+    }
+  } else {
+    currentIndex6 = (currentIndex6 - 1 + images6.length) % images6.length;
+    showImage6();
+  }
+}
+
+// Fonction pour afficher l'image correspondante pour le projet Grimoire
+function showImage6() {
+  imageContainer6.innerHTML = `<img src="${images6[currentIndex6]}" alt="Image du projet Mon Vieux Grimoire" class="modal-image-grimoire">`;
+}
+
+// Écouteurs d'événements pour les boutons "Next" et "Back" pour le projet Kasa
+nextBtn6.addEventListener("click", showNextImage6);
+prevBtn6.addEventListener("click", showPrevImage6);
+
+// Sélectionnez la fenêtre modale et les boutons de contrôle pour le projet Grimoire
+const modal7 = document.getElementById("project-modal-7");
+const modalText7= modal7.querySelector("#modal-text"); // Correction du sélecteur
+const prevBtn7 = modal7.querySelector(".modal-btn-prev");
+const nextBtn7 = modal7.querySelector(".modal-btn-next");
+const imageContainer7 = modal7.querySelector(".image-container");
+
+// Tableau des chemins d'accès des images pour le projet Grimoire
+const images7 = [
+  "./images/Grimoire/Grimoire-1.webp",
+  "./images/Grimoire/Grimoire-2.webp",
+  "./images/Grimoire/Grimoire-3.webp",
+  "./images/Grimoire/Grimoire-4.webp",
+  "./images/Grimoire/Grimoire-5.webp",
+  "./images/Grimoire/Grimoire-6.webp",
+  "./images/Grimoire/Grimoire-8.webp",
+  "./images/Grimoire/Grimoire-9.webp",
+  "./images/Grimoire/Grimoire-10.webp",
+  "./images/Grimoire/Grimoire-11.webp",
+  "./images/Grimoire/Grimoire-12.webp",
+  "./images/Grimoire/Grimoire-13.webp"
+];
+
+// Index de l'image actuellement affichée pour le projet Grimoire
+let currentIndex7 = 0;
+let showingText7 = true;
+
+// Fonction pour afficher l'image suivante pour le projet Grimoire
+function showNextImage7() {
+  if (showingText7) {
+    modalText7.style.display = "none";
+    imageContainer7.style.display = "block";
+    currentIndex7++;
+    showImage7();
+    showingText7 = false;
+    prevBtn7.style.display = "inline-block";
+  } else {
+    currentIndex7 = (currentIndex7 + 1) % images7.length;
+    showImage7();
+  }
+}
+
+// Fonction pour afficher l'image précédente pour le projet Grimoire
+function showPrevImage7() {
+  if (currentIndex7 === 0) {
+    if (!showingText7) {
+      modalText7.style.display = "block";
+      imageContainer7.style.display = "none";
+      showingText7 = true;
+      prevBtn7.style.display = "none";
+    }
+  } else {
+    currentIndex7 = (currentIndex7 - 1 + images7.length) % images7.length;
+    showImage7();
+  }
+}
+
+// Fonction pour afficher l'image correspondante pour le projet Grimoire
+function showImage7() {
+  imageContainer7.innerHTML = `<img src="${images7[currentIndex7]}" alt="Image du projet Mon Vieux Grimoire" class="modal-image-grimoire">`;
+}
+
+// Écouteurs d'événements pour les boutons "Next" et "Back" pour le projet Kasa
+nextBtn7.addEventListener("click", showNextImage7);
+prevBtn7.addEventListener("click", showPrevImage7);
+
+
+// Sélectionnez la fenêtre modale et les boutons de contrôle pour le projet Grimoire
+const modal8 = document.getElementById("project-modal-8");
+const modalText8= modal8.querySelector("#modal-text"); // Correction du sélecteur
+const prevBtn8 = modal8.querySelector(".modal-btn-prev");
+const nextBtn8 = modal8.querySelector(".modal-btn-next");
+const imageContainer8 = modal8.querySelector(".image-container");
+
+// Tableau des chemins d'accès des images pour le projet Grimoire
+const images8 = [
+  "./images/Grimoire/Grimoire-1.webp",
+  "./images/Grimoire/Grimoire-2.webp",
+  "./images/Grimoire/Grimoire-3.webp"
+];
+
+// Index de l'image actuellement affichée pour le projet Grimoire
+let currentIndex8 = 0;
+let showingText8 = true;
+
+// Fonction pour afficher l'image suivante pour le projet Grimoire
+function showNextImage8() {
+  if (showingText8) {
+    modalText8.style.display = "none";
+    imageContainer8.style.display = "block";
+    currentIndex8++;
+    showImage8();
+    showingText8 = false;
+    prevBtn8.style.display = "inline-block";
+  } else {
+    currentIndex8 = (currentIndex8 + 1) % images8.length;
+    showImage8();
+  }
+}
+
+// Fonction pour afficher l'image précédente pour le projet Grimoire
+function showPrevImage8() {
+  if (currentIndex8 === 0) {
+    if (!showingText8) {
+      modalText8.style.display = "block";
+      imageContainer8.style.display = "none";
+      showingText8 = true;
+      prevBtn8.style.display = "none";
+    }
+  } else {
+    currentIndex8 = (currentIndex8 - 1 + images8.length) % images8.length;
+    showImage8();
+  }
+}
+
+// Fonction pour afficher l'image correspondante pour le projet Grimoire
+function showImage8() {
+  imageContainer8.innerHTML = `<img src="${images8[currentIndex8]}" alt="Image du projet Mon Vieux Grimoire" class="modal-image-grimoire">`;
+}
+
+// Écouteurs d'événements pour les boutons "Next" et "Back" pour le projet Kasa
+nextBtn8.addEventListener("click", showNextImage8);
+prevBtn8.addEventListener("click", showPrevImage8);
+
+// Sélectionnez la fenêtre modale et les boutons de contrôle pour le projet Grimoire
+const modal9 = document.getElementById("project-modal-9");
+const modalText9= modal9.querySelector("#modal-text"); // Correction du sélecteur
+const prevBtn9 = modal9.querySelector(".modal-btn-prev");
+const nextBtn9 = modal9.querySelector(".modal-btn-next");
+const imageContainer9 = modal9.querySelector(".image-container");
+
+// Tableau des chemins d'accès des images pour le projet Grimoire
+const images9 = [
+  "./images/Grimoire/Grimoire-1.webp",
+  "./images/Grimoire/Grimoire-2.webp",
+  "./images/Grimoire/Grimoire-3.webp"
+];
+
+// Index de l'image actuellement affichée pour le projet Grimoire
+let currentIndex9 = 0;
+let showingText9 = true;
+
+// Fonction pour afficher l'image suivante pour le projet Grimoire
+function showNextImage9() {
+  if (showingText9) {
+    modalText9.style.display = "none";
+    imageContainer9.style.display = "block";
+    currentIndex9++;
+    showImage9();
+    showingText9 = false;
+    prevBtn9.style.display = "inline-block";
+  } else {
+    currentIndex9 = (currentIndex9 + 1) % images9.length;
+    showImage9();
+  }
+}
+
+// Fonction pour afficher l'image précédente pour le projet Grimoire
+function showPrevImage9() {
+  if (currentIndex9 === 0) {
+    if (!showingText9) {
+      modalText9.style.display = "block";
+      imageContainer9.style.display = "none";
+      showingText9 = true;
+      prevBtn9.style.display = "none";
+    }
+  } else {
+    currentIndex9 = (currentIndex9 - 1 + images9.length) % images9.length;
+    showImage9();
+  }
+}
+
+// Fonction pour afficher l'image correspondante pour le projet Grimoire
+function showImage9() {
+  imageContainer9.innerHTML = `<img src="${images9[currentIndex9]}" alt="Image du projet Mon Vieux Grimoire" class="modal-image-grimoire">`;
+}
+
+// Écouteurs d'événements pour les boutons "Next" et "Back" pour le projet Kasa
+nextBtn9.addEventListener("click", showNextImage9);
+prevBtn9.addEventListener("click", showPrevImage9);

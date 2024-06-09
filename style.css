@@ -617,7 +617,7 @@ footer {
 }
 
 .image-container{
-  margin-top: 20%;
+  margin: 35% 1% -33% 0%;
   width: 100%;
 }
 
@@ -637,6 +637,7 @@ footer {
   height: auto; 
   max-height: 90%; 
 }
+
 
 .project-modal-content {
   height: auto;
@@ -787,7 +788,7 @@ nav{
     background-color: rgba(0, 0, 0, 0.9);
     padding: 20px;
     border-radius: 10px;
-    width: 620px;
+    width: 500px;
     overflow: auto;
     z-index: 9999;
     transition: all 0.3s ease;

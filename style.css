@@ -324,7 +324,6 @@ cursor: pointer;
 .project:hover{
   cursor: pointer;
   transform: scale(1.1);
-
 }
 
 .project_description {
@@ -832,7 +831,7 @@ nav{
 
   .projects_grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 4rem;
     width: calc(100% - 2rem);
   }
   .project {

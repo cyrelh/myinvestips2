@@ -412,6 +412,10 @@ img {
   font-weight: bold;
 }
 
+.project_stack-item:hover {
+color: goldenrod;
+}
+
 .project .link--icon {
   margin-left: 0.5em;
 }

@@ -950,7 +950,8 @@ nav{
   }
 
   .intro_avatar img {
-    width:117%
+    width:100%;
+    height: auto;
   }
   .about_intro_title {
     font-size: 2rem;
